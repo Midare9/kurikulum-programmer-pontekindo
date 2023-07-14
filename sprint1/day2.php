@@ -69,7 +69,7 @@
 // echo $num1 % $num2;
 // echo "\n";
 
-// // Operasi Penugasan
+// // Operator Penugasan
 // // Ditambah -> +=
 // $angka1 = 2;
 // $angka2 = 4;
