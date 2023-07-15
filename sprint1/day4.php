@@ -67,18 +67,18 @@
 // }
 
 // Switch -> mirip seperti if else namun sintaks lebih simple
-$nilai = 60;
-switch($nilai) {
-    case $nilai >= 100:
-        echo "Perfect\n";
-        break;
-    case $nilai >= 80:
-        echo "Excellent\n";
-        break;
-    default:
-        echo "Not Passed";
-        break;
-}
+// $nilai = 60;
+// switch($nilai) {
+//     case $nilai >= 100:
+//         echo "Perfect\n";
+//         break;
+//     case $nilai >= 80:
+//         echo "Excellent\n";
+//         break;
+//     default:
+//         echo "Not Passed";
+//         break;
+// }
 
 echo "-----Menentukan Denda Sewa Buku-----\n";
 echo "Masukkan Nama Konsumen: ";
@@ -87,36 +87,36 @@ echo "Masukkan Judul Buku: ";
 $judul = trim(fgets(STDIN));
 echo "Masukkan Lama Keterlambatan (hari): ";
 $lama = trim(fgets(STDIN));
+echo "\n";
 echo "Nama Konsumen: $nama\n";
 echo "Judul Buku: $judul\n";
 echo "Lama Keterlambatan: $lama (hari)\n";
-echo "Denda:  ";
 switch($lama) {
     case $lama == 1:
-        echo "1000\n";
+        echo "Denda: 1000\n";
         break;
     case $lama == 2:
-        echo "20000\n";
+        echo "Denda: 2000\n";
         break;
     case $lama == 3:
-        echo "30000\n";
+        echo "Denda: 3000\n";
         break;
     case $lama == 4:
-        echo "40000\n";
+        echo "Denda: 4000\n";
         break;
     case $lama == 5:
-        echo "50000\n";
+        echo "Denda: 5000\n";
         break;
     case $lama == 6:
-        echo "60000\n";
+        echo "Denda: 6000\n";
         break;
-    case $lama == :
-        echo "20000\n";
+    case $lama == 7:
+        echo "Denda: 7000\n";
         break;
-    case $lama == 2:
-        echo "20000\n";
+    case $lama >= 8:
+        echo "Denda: 10000\n";
         break;
         default:
-        echo "Tidak Ada Denda";
+        echo "Denda: Tidak Ada Denda";
         break;
 }
