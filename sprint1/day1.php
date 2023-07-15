@@ -51,7 +51,8 @@ echo "Nama saya adalah $nama, umur saya $umur";
 
 // CONSTANT / Konstanta -> tidak bisa diubah
 define("NAMA", "Danu"); // menggunakan function bawaaan php define
+define("TINGGI", "165");
 const UMUR=17; // menggunakan const
 echo "\n";
-echo NAMA . UMUR; // tanda titik menyambung kedua konstanta
+echo NAMA . UMUR . TINGGI; // tanda titik menyambung kedua konstanta
 echo "\n";

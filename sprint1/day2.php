@@ -91,11 +91,21 @@
 // echo "\n";
 // fgets adalah fungsi untuk mengambil inputan dari cli/terminal
 // STDIN adalah standar input -> tempat untuk menyimpan data sebelum ditampilkan
-echo " Menghitung Luas Persegi " . "\n";
-echo "Ketikkan sisi persegi :";
-$sisi = trim(fgets (STDIN));
-$luas = $sisi * $sisi;
-$keliling = 4 * $sisi;
-echo "Sisi: $sisi" . "\n";
-echo "Luas: $sisi * $sisi = $luas" . "\n";
-echo "Keliling: 4 * $sisi = $keliling" . "\n";
+// echo " Menghitung Luas Persegi " . "\n";
+// echo "Ketikkan sisi persegi :";
+// $sisi = trim(fgets (STDIN));
+// $luas = $sisi * $sisi;
+// $keliling = 4 * $sisi;
+// echo "Sisi: $sisi" . "\n";
+// echo "Luas: $sisi * $sisi = $luas" . "\n";
+// echo "Keliling: 4 * $sisi = $keliling" . "\n";
+
+echo "Menghitung Luas Persegi Panjang\n";
+echo "Ketikkan nilai panjang: ";
+$p = trim(fgets(STDIN));
+echo "Ketikkan nilai lebar: ";
+$l = trim(fgets(STDIN));
+$luas = $p * $l;
+echo "Panjang: $p" . "\n";
+echo "Lebar: $l\n";
+echo "Luas: $p * $l = $luas\n";
