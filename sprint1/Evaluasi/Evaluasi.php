@@ -24,52 +24,52 @@ define("UMUR", "15");
 echo UMUR;
 echo "\n";
 
-$array = array(
-    "Danu" => [
-        "umur" => 17,
-        "alamat" => [
-            "provinsi" => "Jambi",
-            "negara" => "Indonesia"
-        ]
-        ],
-    "Faqih" => [
-        "umur" => 17,
-        "alamat" => [
-            "provinsi" => "Sumsel",
-            "negara" => "Jepang"
-        ]
-    ]
-    "Syifa" => [
-        "umur" => 22,
-        "alamat" => [
-            "daerah" => "solo",
-            "negara" => "Jepang"
-        ]
-    ]
-    "Faqih" => [
-        "umur" => 17,
-        "alamat" => [
-            "provinsi" => "Sumsel",
-            "negara" => "Jepang"
-        ]
-    ]
-    "Faqih" => [
-        "umur" => 17,
-        "alamat" => [
-            "provinsi" => "Sumsel",
-            "negara" => "Jepang"
-        ]
-    ]
-    "Faqih" => [
-        "umur" => 17,
-        "alamat" => [
-            "provinsi" => "Sumsel",
-            "negara" => "Jepang"
-        ]
-    ]
-        );
-echo $array["Faqih"]["alamat"]["provinsi"];
-echo "\n";
+// $array = array(
+//     "Danu" => [
+//         "umur" => 17,
+//         "alamat" => [
+//             "provinsi" => "Jambi",
+//             "negara" => "Indonesia"
+//         ]
+//         ],
+//     "Faqih" => [
+//         "umur" => 17,
+//         "alamat" => [
+//             "provinsi" => "Sumsel",
+//             "negara" => "Jepang"
+//         ]
+//     ]
+//     "Syifa" => [
+//         "umur" => 22,
+//         "alamat" => [
+//             "daerah" => "solo",
+//             "negara" => "Jepang"
+//         ]
+//     ]
+//     "Faqih" => [
+//         "umur" => 17,
+//         "alamat" => [
+//             "provinsi" => "Sumsel",
+//             "negara" => "Jepang"
+//         ]
+//     ]
+//     "Faqih" => [
+//         "umur" => 17,
+//         "alamat" => [
+//             "provinsi" => "Sumsel",
+//             "negara" => "Jepang"
+//         ]
+//     ]
+//     "Faqih" => [
+//         "umur" => 17,
+//         "alamat" => [
+//             "provinsi" => "Sumsel",
+//             "negara" => "Jepang"
+//         ]
+//     ]
+//         );
+// echo $array["Faqih"]["alamat"]["provinsi"];
+// echo "\n";
 
 // Uang Budi saat ini
 $ubudi = 5000;
@@ -85,7 +85,7 @@ $pangkat = $a ** $b;
 echo "$pangkat\n";
 
 // Switch
-$berat = 21;
+$berat = 33;
 switch($berat) {
     case $berat <= 10:
         echo "ringan\n";
@@ -97,6 +97,34 @@ switch($berat) {
         echo "berat\n";
         break;
     default:
-        echo "Berat tidak teridentifikasi\n";
+        echo "Sangat berat\n";
         break;
 }
+
+$array = [
+    "Danu" => [
+        "Nama" => "Danu",
+        "Umur" => "17",
+        "TTL" => "Jambi, 09 Oktober 2005"
+    ],
+    "Dimas" => [
+        "Nama" => "Dimas",
+        "Umur" => ""
+    ]
+]
+
+// Soal 6
+
+$budi = "Budi";
+$akhlakbaik = true;
+$goodlooking = false;
+$goodrekening = false;
+
+if ($akhlakbaik == true && ($goodlooking == true || $goodrekening == true)) {
+    $ayu = "Ayu: Saya terima\n";
+}
+else {
+    $ayu = "Ayu: Saya tidak terima\n";
+}
+
+echo "Budi melamar Ayu, dia memiliki akhlak yang baik namun tidak good looking maupun good rekening. Maka jawaban Ayu: $ayu\n";
