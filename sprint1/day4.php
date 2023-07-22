@@ -87,7 +87,7 @@ echo "Masukkan Judul Buku: ";
 $judul = trim(fgets(STDIN));
 echo "Masukkan Lama Keterlambatan (hari): ";
 $lama = trim(fgets(STDIN));
-echo "\n";
+echo "\n";  
 echo "Nama Konsumen: $nama\n";
 echo "Judul Buku: $judul\n";
 echo "Lama Keterlambatan: $lama (hari)\n";

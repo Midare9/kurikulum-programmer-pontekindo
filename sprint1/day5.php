@@ -65,22 +65,22 @@ for ($i = 1; $i <= 10; $i++) {
     }
 }
 
-do
-    echo "---MENU---";
-    echo "1. Masuk Apk\n";
-    echo "2. Keluar\n";
-    echo "Pilih: ";
-    $menu = (int) trim(fgets(STDIN));
-    if ($menu == 1) {
-        echo "Masuk Apk\n";
-    }
-    else if ($menu == 2) {
-        echo "Anda telah keluar\n";
-        exit;
-    }
-    else {
-        echo "Pilihan tidak tersedia\n";
-    }
-    echo " Balik ke menu (Y/N): ";
-    $balik = trim(fgets(STDIN));
-while ($balik == "Y");
+// do
+//     echo "---MENU---";
+//     echo "1. Masuk Apk\n";
+//     echo "2. Keluar\n";
+//     echo "Pilih: ";
+//     $menu = (int) trim(fgets(STDIN));
+//     if ($menu == 1) {
+//         echo "Masuk Apk\n";
+//     }
+//     else if ($menu == 2) {
+//         echo "Anda telah keluar\n";
+//         exit;
+//     }
+//     else {
+//         echo "Pilihan tidak tersedia\n";
+//     }
+//     echo " Balik ke menu (Y/N): ";
+//     $balik = trim(fgets(STDIN));
+// while ($balik == "Y");

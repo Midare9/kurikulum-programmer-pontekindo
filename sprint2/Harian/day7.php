@@ -1,39 +1,37 @@
 <?php
-// $array = [
-//     "Top" => [
-//         "id" => "Top",
-//         "nama barang" => "Knitted Hat",
-//         "harga" => "299.000",
-//         "jumlah_stok" => "18",
-//         "deskripsi" => "Penutup kepala yang dibuat khusus",
-//         "tanggal_produksi" => "18 Juli 2023"
-//     ],
-//     "Top" => [
-//         "id" => "Top",
-//         "nama barang" => "Knitted Hat",
-//         "harga" => "299.000",
-//         "jumlah_stok" => "18",
-//         "deskripsi" => "Penutup kepala yang dibuat khusus",
-//         "tanggal_produksi" => "18 Juli 2023"
-//     ]
-//     ];
+$array = [
+    "Top" => [
+        "id" => "Top",
+        "nama barang" => "Knitted Hat",
+        "harga" => "299.000",
+        "jumlah_stok" => "18",
+        "deskripsi" => "Penutup kepala yang dibuat khusus",
+        "tanggal_produksi" => "18 Juli 2023"
+    ],
+    "Bottom" => [
+        "id" => "Bottom",
+        "nama barang" => "Pleated Pants",
+        "harga" => "599.000",
+        "jumlah_stok" => "8",
+        "deskripsi" => "Tampil rapi dan juga kasual",
+        "tanggal_produksi" => "18 Juli 2023"
+    ]
+    ];
 
-// $no = 1;
-// foreach ($array as $key => $value) {
-//     echo "$no.". $key. "\n";
-//     foreach ($value as $key1 => $value1) {
-//         foreach ($value1 as $key2 => $value2) {
-//             echo "$key2: ". $value2. "\n";
-//         }
-//     }
-//     $no++;
-// }
+$no = 1;
+foreach ($array as $key => $value) {
+    echo "$no.". $key. "\n";
+    foreach ($value as $key1 => $value1) {
+            echo "$key1: ". $value1. "\n";
+    }
+    $no++;
+}
 
 // manipulasi string: mengubah/mengedit, menambah, menghapus, tipe data string
 // strlen: menghitung panjang string -> menghitung jumlah karakter
-$string = "Hello World Coding";
-$var = "INI";
-$number = 1_534_213_983;
+// $string = "Hello World Coding";
+// $var = "INI";
+// $number = 1_534_213_983;
 // var_dump(strlen($string));
 
 // str_word_count: menhitung jumlah kata
@@ -59,9 +57,9 @@ $number = 1_534_213_983;
 // substr: mengambil beberapa karakter dari data string
 // var_dump(substr($string,3,6));
 
-$buku = "buku";
+// $buku = "buku";
 // menggunakan kurung kurawal (curly brace) pada variabel di dalam string
-echo "Saya sedang melakukan pem{$buku}an\n" . "Saya beli buku baru\n";
+// echo "Saya sedang melakukan pem{$buku}an\n" . "Saya beli buku baru\n";
 
 // menngeubah tipe data
 // menjadi string
@@ -77,6 +75,6 @@ echo "Saya sedang melakukan pem{$buku}an\n" . "Saya beli buku baru\n";
 // explode: mengubah string menjadi array
 // var_dump(explode(" ", $string));
 
-$c = ["Hello", "World", "Coding"];
+// $c = ["Hello", "World", "Coding"];
 // implode: mengubah array menjadi string
-var_dump(implode("-", $c));
+// var_dump(implode("-", $c));
