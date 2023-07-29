@@ -59,12 +59,12 @@
 // // }
 
 // default parameter
-function sayHi($nama, $greeting = "Good Morning") { // Agar lebih berguna parameter default diletakkan di akhir
-    echo "Hello $nama! $greeting\n";
-}
+// function sayHi($nama, $greeting = "Good Morning") { // Agar lebih berguna parameter default diletakkan di akhir
+//     echo "Hello $nama! $greeting\n";
+// }
 
 // sayHi();
-sayHi("Danu", "Selamat pagi");
+// sayHi("Danu", "Selamat pagi");
 
 // Type declaration
 // function harusangka(int $angka):int { // Memvalidasi apakah data yang dimasukkan adalah integer
@@ -73,40 +73,45 @@ sayHi("Danu", "Selamat pagi");
 
 // harusangka("Huruf");
 
-function sum(int $a, int $b) {
-    $t = $a + $b;
-    echo "$a + $b = $t\n";
-}
+// function sum(int $a, int $b) {
+//     $t = $a + $b;
+//     echo "$a + $b = $t\n";
+// }
 
-sum("100", "100");
+// sum("100", "100");
 
-function total(...$jumlah) {
-    // var_dump($jumlah);
-    $total = 0;
-    foreach($jumlah as $value) {
-        $total += $value;
-    }
-    echo "Total: $total\n";
-}
+// function total(...$jumlah) {
+//     // var_dump($jumlah);
+//     $total = 0;
+//     foreach($jumlah as $value) {
+//         $total += $value;
+//     }
+//     echo "Total: $total\n";
+// }
 
-total(1,2,3,4,5,6);
+// total(1,2,3,4,5,6);
 
-function listnama(...$listnama) {
-    $no = 1;
-    foreach($listnama as $value) {
-        echo "$no-" .  $value . "\n";
-        $no++;
-    }
-}
+// function listnama(...$listnama) {
+//     $no = 1;
+//     foreach($listnama as $value) {
+//         echo "$no-" .  $value . "\n";
+//         $no++;
+//     }
+// }
 
-listnama("Danu", "Hafidz", "Faqih");
+// listnama("Danu", "Hafidz", "Faqih");
 
 // Function Return Value
 // Highlighted
-function jumlah(int $first, int $second) {
-    return $first + $second; //Baru menampung suatu data
-}
+// function jumlah(int $first, int $second) {
+//     return $first + $second; //Baru menampung suatu data
+// }
 
-echo jumlah(100, 100) . "\n";
+// echo jumlah(100, 100) . "\n";
 
 // Return Type Declaration
+
+function nama(...$siswa) {
+    return $daftar = $siswa;
+}
+echo implode("\n", nama("Danu", "Ibnu"));
