@@ -1,4 +1,5 @@
 <?php
+include_once "../model/data.php";
 
 function read($filter) {
     global $daftar;

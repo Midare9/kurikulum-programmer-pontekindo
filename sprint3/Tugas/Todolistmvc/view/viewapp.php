@@ -1,11 +1,13 @@
 <?php
 include_once "../helper/input.php";
-include_once "../helper/edit.php";
 include_once "../controller/create.php";
 include_once "../controller/read.php";
 include_once "../controller/update.php";
+include_once "../controller/delete.php";
 
-
+function viewinput() {
+    input();
+}
 function viewcreate() {
     $baru = input();
     create($baru);
@@ -13,13 +15,13 @@ function viewcreate() {
 function viewread() {
     read("ucwords");
 }
-function viewedit() {
-    inputdaftaredit();
-}
 function viewupdate() {
-    update();
-    $update = inputdaftaredit();
-    update($urutan);
+    global $edit;
+    update($edit);
+}
+function viewdelete() {
+    global $delete;
+    delete($delete);
 }
 
 echo "====Todoo-App====\n";
@@ -44,18 +46,13 @@ while(true) {
         if($opsi == 1) {
             edit:
             echo "Pilih daftar yang ingin diedit: ";
-            viewedit();
-            // $edit = trim(fgets(STDIN));
-            // echo "Anda akan mengedit $daftar[$urutan]\n";
+            $edit = trim(fgets(STDIN));
+            echo "Anda akan mengedit '$daftar[$edit]'\n";
             echo "Masukkan daftar baru: ";
             viewupdate();
-            // $update = trim(fgets(STDIN));
-            // $array[$edit] = $update;
-            foreach ($array as $key => $value) {
-                echo "$key. " . $value . "\n";
-            }
+            viewread();
             editlagi:
-            echo "Ingin mengedit daftar yang lain? (Y/N): \n";
+            echo "Ingin mengedit daftar yang lain? (Y/N): ";
             $editlagi = trim(strtoupper(fgets(STDIN)));
             if($editlagi == "Y") {
                 goto edit;
@@ -72,14 +69,9 @@ while(true) {
             hapus:
             echo "Pilih data yang ingin dihapus: ";
             $delete = trim(fgets(STDIN));
-            echo "Anda akan menghapus $array[$delete]\n";
-            for($i = $delete; $i < count($array); $i++) {
-                $array[$i] = $array[$i+1];
-            }
-            unset($array[count($array)]);
-            foreach ($array as $key => $value) {
-                echo "$key. " . $value . "\n";
-            }
+            echo "Anda akan menghapus $daftar[$delete]\n";
+            viewdelete();
+            viewread();
             hapuslagi:
             echo "Ingin menghapus daftar yang lain? (Y/N): \n";
             $hapuslagi = trim(strtoupper(fgets(STDIN)));
