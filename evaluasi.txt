@@ -1,0 +1,19 @@
+1. Database adalah kumpulan data yang tersusun secara sistematis
+
+   Jenis-jenis database:
+   - Relational database
+   - NoSQL database
+   - Cloud database
+   - Distributed database
+   -
+
+2. Database relational adalah tipe database yang menyimpan dan menyediakan akses ke dalamnya yang saling behubungan satu sama lain.
+
+3. SQL: merupakan singkatan dari structured query language yaitu bahasa standar untuk pembuatan dan manipulasi database.
+
+   Pengelompokannya:
+   - DDL(Data Definiton Language) = Digunakan untuk membuat perubahan di dalam database.
+   - DML(Data Manipulation Language) = Digunakan untuk mengubah/memanipulasi table dan database yang telah dibuat.
+   - DCL(Data Control Language) = Yang berhubungan dengan hak akses dan perizinan.
+   - DQL(Data Query Language) = Kata perintah atau sintaks yang digunakan contohnya 'SELECT'
+   - 
