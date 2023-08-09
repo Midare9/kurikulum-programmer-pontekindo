@@ -22,4 +22,4 @@ Melakukan export
 mysqldump -u user -p nama_database > nama_file.sql
 
 Melakukan import
-mysql -u user -p nama_database < nama_file.sql
+mysqldump -u user -p nama_database < nama_file.sql
