@@ -16,10 +16,4 @@
    - DML(Data Manipulation Language) = Digunakan untuk mengubah/memanipulasi table dan database yang telah dibuat.
    - DCL(Data Control Language) = Yang berhubungan dengan hak akses dan perizinan.
    - DQL(Data Query Language) = Kata perintah atau sintaks yang digunakan contohnya 'SELECT'
-   -
-   
-Melakukan export
-mysqldump -u user -p nama_database > nama_file.sql
-
-Melakukan import
-mysql -u user -p nama_database < nama_file.sql
+   - 
