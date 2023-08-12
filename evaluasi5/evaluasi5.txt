@@ -1,0 +1,10 @@
+2. Table relationship adalah hubungan antar table yang dibuat agar sebuah database dapat bekerja dengan efisien dan terkoordinasi.
+
+3. INNER JOIN: Menampilkan data yang sama terdapat di dalam tabel.
+   LEFT JOIN: Menampilkan data dari tabel yang berada di kiri dan data yang sama.
+   RIGHT JOIN: Menampilkan data dari tabel yang berada di kanan dan data yang sama.
+   CROSS JOIN: Menampilkan semua data dari setiap tabel dengan mengkalikannya.
+
+4. One-to-one: Hubungan antar tabel yang hanya membolehkan dengan satu tabel.
+   One-to-many: Hubungan antar tabel dimana sebuah data di dalam tabel dapat terhubung dengan banyak data di dalam tabel yang lain.
+   Many-to-many: Hubungan antar tabel dimana banyak data di dalam tabel dapat terhubung dengan banyak data di dalam tabel yang lain.
