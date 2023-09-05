@@ -1,0 +1,3 @@
+Terdapat dua kondisi pada server
+Development:
+Production:

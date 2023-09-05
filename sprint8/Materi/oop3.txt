@@ -1,0 +1,12 @@
+4 Pilar OOP
+Inheritance, Encapsulation, Abstraction
+
+Inheritance
+Pewarisan isi dalam class seperti properties, method, dan constant.
+Jenis inheritance yang umum dilakukan 
+- single
+- multilevel
+- multiple
+
+
+Namespace

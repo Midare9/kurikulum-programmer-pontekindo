@@ -1,0 +1,10 @@
+This Keyword
+
+Properties Vs Constant
+Constant di dalam class tidak
+
+Construct
+Function yang dipanggil ketika pertama kali objek dibuat.
+
+Destruct
+Function yang akan dipanggil ketika objek dihapus dari memori.

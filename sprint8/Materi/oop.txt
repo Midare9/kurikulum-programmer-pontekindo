@@ -1,0 +1,19 @@
+OOP
+atau Object Oriented Programming, merupakan sudut panjang bahasa pemrograman yang berkonsep 'objek'.
+Ada beberapa istilah yang perlu di ketahui.
+
+Object: data yang berisi field/properties dan method.
+
+Class: cetakan untuk membuat object. Class berisikan deklarasi semua properties dan method yang dimiliki oleh object.
+
+Properties: data yang bisa kita sisipkan di dalam object.
+
+Gaya Penulisan Kode
+snake_case (menggunakan underscore).
+pascalCase (semua suku kata menyatu dan huruf kapital sebagai pemisahnya).
+CamelCase (sama seperti CamelCase, kecuali huruf pertamanya kecil).
+kebab-case (dipisahkan oleh tanda minus).
+ALL CAPS (semua kapital).
+
+Membuat Class
+format yang digunakan adalah CamelCase. Mengunakan kata kunci 'new'.

@@ -1,0 +1,17 @@
+ERD Entity Relationship Diagram
+suatu model untuk menjelaskan hubungan antar data dalam database .
+Entity Objek yang dapat dibedakan.
+Atribut Karakteristik dari entity atau relationship.
+Jenis Atribut key, simple, multivalue.
+
+Proses pengorganisasian dan penataan database.
+Manfaatnya mencegah masalah dan membuat pemeliharaaan lebih mudah
+Jenis Normal Form
+Boyce Codd Normal Form harus memenuhi 3NF.
+
+DFD Data Flow Diagram
+Cara menampilkan secara visual bagaimana aliran data bergerak.
+Memastikan interaksi antara komponen berjalan dengan baik.
+
+UML Unified Modelling Language
+metode dalam pemodelan secara visual.
