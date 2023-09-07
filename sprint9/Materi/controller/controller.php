@@ -1,5 +1,5 @@
 <?php
-include_once "../Model/conn.php";
+include_once "../model/conn.php";
 
 class Products extends Connection {
     var $satu;

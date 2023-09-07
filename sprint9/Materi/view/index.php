@@ -1,5 +1,5 @@
 <?php
-include_once "../Controller/controller.php";
+include_once "../controller/controller.php";
 $products = new Products();
 $index = $products->index();
 ?>

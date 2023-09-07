@@ -1,0 +1,3 @@
+Abstraction
+
+Static Keyword
